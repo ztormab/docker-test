@@ -15,4 +15,5 @@ RUN chmod +x /usr/local/bin/composer
 # Checkout code
 WORKDIR /var
 RUN rm -rf www && git clone git@github.com:ztormab/docker-test www
-RUN [ -f composer.json ] && composer install --no-interaction
+RUN if [ -f composer.json ]; then composer install --no-interaction; fi
+
