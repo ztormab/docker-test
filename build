@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker build base --tag=ztorm/base
+
