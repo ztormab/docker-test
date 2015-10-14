@@ -1,0 +1,4 @@
+[submodule "base/keys"]
+	path = base/keys
+	url = zper@dev.ztormint.net:/home/git/ztorm/access-keys.git
+	branch = github
