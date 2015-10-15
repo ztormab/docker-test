@@ -1,5 +1,5 @@
 #!/bin/sh
 
-docker build base-without-code --tag=ztorm/base-without-code
-docker build base --no-cache   --tag=ztorm/base
+docker build --tag=ztorm/base-without-code base-without-code 
+docker build --tag=ztorm/base --no-cache   base    
 
