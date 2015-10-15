@@ -1,5 +1,8 @@
 FROM php:5.6-apache
 
+# Install PDO MySQL module
+RUN docker-php-ext-install pdo pdo_mysql
+
 # Install git
 RUN apt-get -y update && apt-get -y install git
 
